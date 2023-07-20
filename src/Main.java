@@ -25,7 +25,7 @@ public class Main {
 
     }
 }
-
+//T.C=O(n^2)
 
 
 //another method: using HashMap
@@ -49,3 +49,34 @@ public class Main {
         }
     }
 }
+// T.C=o(n)+o(n)=O(n)
+
+
+
+//another method
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    
+	    int arr[]={1,4,5,4,1,6,7,6};
+	    
+	    int count=0;
+	    int n=arr.length;
+	    int duplicates[]=new int[n];
+	    Arrays.sort(arr);
+	    for(int i=0; i<n-1; i++)
+	    {
+	        
+	        
+	        if(arr[i]==arr[i+1])
+	        {
+	         	System.out.print(arr[i]+" "); 
+	       
+	        }
+	    }
+	    
+	}
+}
+// T.C=o(nlogn)+o(n)=O(nlogn)
